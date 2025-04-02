@@ -132,8 +132,8 @@ a img:hover{
 }
 .imagetext{
     position: absolute;
-    top: 70%;
-    left: 20%;
+    top: 60%;
+    left: 50%;
     transform: translate(-50%,50%);
     color: white;
     font-size: 50px;

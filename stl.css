@@ -5,7 +5,7 @@
   --accent-color: #ff6b6b;
   --light-bg: #f8f9fa;
   --card-bg: #ffffff;
-  --text-dark: #2d3748;
+  --text-dark: #01040a;
   --text-light: #f8f9fa;
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -336,7 +336,7 @@ nav ul li .active {
 .nav a{
   margin: 0 15px;
   color: white;
-  font-size: 20px; 
+  font-size: 15px; 
 
   
   
@@ -416,5 +416,44 @@ a img{
 }
 a img:hover{
   transform:scale(1.1);
+}
+
+.image{
+  background-image: url('plant.jpg');
+  position:absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  
+}
+
+.image img{
+  display:block;
+  width: 100%;
+  height: 100%;
+   object-fit: cover;
+  
+}
+.overlay{
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 1350px;
+  height: 3500px;
+  background-color:rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+
+.head{
+  z-index: auto;
+
+  position:relative;
+  
+
 }
 
