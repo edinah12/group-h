@@ -1,4 +1,6 @@
-
+.body{
+  background-color: #87CEEB;
+}
 :root {
  /* --primary-color: #0056b3;*/
   --primary-dark: #003366;
