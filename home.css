@@ -1,0 +1,205 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.header {
+    background-color: #004080;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 120px;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav a:hover {
+    color: black;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    background-color: #87CEEB;
+    padding: 20px;
+}
+
+.content img {
+    left: 170px;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.text-box {
+    position: absolute;
+    top: 20px;
+    /* Adjust vertical position */
+    left: 20px;
+    right: 750px;
+    background: rgba(0, 0, 0, 0.6);
+    /* Semi-transparent black */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: left;
+    min-width: 200px;
+    /* Adjust width */
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.about-image {
+    width: 250px;
+    height: 400px;
+}
+
+.about-text {
+    flex: 1;
+    /* Allows text to take remaining space */
+    font-size: 24px;
+}
+
+.copyright {
+    background-color: rgb(37, 36, 36);
+    height: 20vh;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+}
+
+article {
+    background-color: #004080;
+    color: white;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.section {
+    padding: 20px;
+    margin-left: 100;
+}
+
+.divider {
+    border-bottom: 1px solid white;
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#academics ul {
+    list-style: none;
+    padding: 0;
+}
+
+#academics li {
+    margin-bottom: 5px;
+}
+
+#academics a {
+    color: white;
+    text-decoration: none;
+}
+
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-container .section {
+    flex: 1 1 300px;
+    border-right: 1px solid rgb(53, 53, 17);
+}
+
+@media(min-width:768px) {
+    .content-container {
+        flex-wrap: nowrap;
+    }
+}
+
+a img {
+    transition: transform 0.3s ease;
+}
+
+a img:hover {
+    transform: scale(1.1);
+}
+
+.testimonials-container {
+    width: 80%;
+    max-width: 300px;
+    height: 80px;
+    margin: 20px auto;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.testimonials {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.testimonial {
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.testimonial.active {
+    opacity: 1;
+    /*shows only one*/
+}
