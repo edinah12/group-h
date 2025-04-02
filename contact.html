@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0>"
+  </head>
+<body>
+  <header class="head1">
+    <img src="./badge.jpg" class="badge">
+    <h id="title">ST.MARY'S SECONDARY SCHOOL KITENDE</h>
+    </header>
+  <link rel="stylesheet" href="style.css">
+  <div class="topnav">
+    <div class="logo"><a href="#"></a</div>
+    <a href="contact.html">Contact Us</a>
+    <a href="nws.html">News & Events</a>
+    <a href="Academics.html">Academics</a>
+    <a href="about.html">About Us</a>
+    <a href="home.html">Home</a>
+</div>
+    <div class="contact-section"><div class="contact-header"><h1>CONTACT US</h1></div>
+  <form id="myForm" action="home.html" onsubmit="return validateForm()">
+    <label for="Name">Name</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="Email">Email</label><br>
+    <input type="email" id="email" name="email"><br>
+    <p> <label for="Message">Message</label></p>
+    <textarea id="Message" name="Message" rows="5" placeholder="Enter your Message"></textarea><br><br>
+    <button type="submit">Submit</button><br><br><br>
+   <div> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7949813234304!2d32.52881167178618!3d0.1959758637847568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177d99fcbf92af05%3A0x532e42669d628d51!2sSt.%20Mary&#39;s%20Kitende!5e0!3m2!1sen!2sug!4v1743335149678!5m2!1sen!2sug" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  </form>
+  <article class="content-container">
+    <div id="contact"class="section">
+        <h1>Contact us</h1>
+        <div class="divider"></div>
+        <p>ST.MARY'S S.S KITENDE</p>
+        <p>P.O.BOX 1245</p>
+        <p>‪+256 754328966‬</p>
+        <P>‪+256 778356856‬</P>
+        <P>st.maryskitende@gmail.com</P>
+    </div>
+    <div id="academics"class="section">
+    <h1>Academics</h1>
+    <div class="divider"></div>
+    <ul>
+        <li> <a href="curriulum.html"data-page="curriculum.html">CURRICULUM</a></li>
+       <li> <a href="teachers.html"data-page="teachers.html">TEACHERS AND SUBJECTS</a></li>
+     <li> <a href="UNEB results.html" data-page="UNEB results">UNEB RESULTS</a></li>
+         </ul>
+    </div>
+</article>
+<footer class="Copyright">
+    <p>Copyright All Right Reserved © Group H, BSE 2025</p>
+    <a href="https://x.com/smask_school?lang=en" target="_blank"title=x-twitter >
+        <img src="twitter.jpg.svg" style="width:32px;height:32px;">
+</a> 
+<a href="https://www.instagram.com/smask_school/?hl=en" target="blank"title=instagram>
+    <img src="instagram.jpg.svg"style="width:32px;height:32px;">
+</a>
+<a href="https://www.facebook.com/groups/29617294861/" target="_blank"title=facebook>
+    <img src="facebook.jpg.svg"style="width:32px;height:32px;">
+</a>
+</footer>
+<script >
+  function validateForm(){
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("Message").value;
+    if(name === "" || email === "" || message === ""){
+      alert("All fields are required.");
+      return false;
+    }
+   }
+</script>
+  </body>
+</html>

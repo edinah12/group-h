@@ -1,0 +1,144 @@
+body,html{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    position: sticky;
+    top: 0;
+    background-color: rgb(0,0,0,0.8);
+    padding: 19px;
+    z-index: 100;
+}
+.navigation{
+    position: absolute;
+    top:0;
+    width:100%;
+    left:0;
+    background-color:rgb(0,0,0,0.5);
+    padding:10px 0;
+    text-align: right;
+}
+.navigation a{
+    color: white;
+    text-decoration: wavy;
+    margin:0 15px;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropcontent{
+    display: none;
+    position: absolute;
+    background-color:rgb(2, 2, 49);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgb(0,0,0,0.2) ;
+    z-index:1;
+    text-align: left;
+}
+.dropdown:hover .dropcontent {
+    display: block;
+}
+.dropcontent a:hover span{
+    background-color:white ;
+    padding: 2px 4px;
+    color: red;
+}
+.dropcontent a{
+    color: rgb(235, 235, 241);
+    padding: 12px 16px ;
+    text-decoration: none;
+    display: block;
+}
+.copyright{
+    background-color: rgb(37, 36, 36);
+    height:20vh;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+}
+article{
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.section{
+    padding:20px;
+    margin-left:100 ;
+}
+.divider{
+    border-bottom: 1px solid red;
+    margin:20px 0;
+}
+h1{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+#academics ul{
+    list-style: none;
+    padding: 0;
+}
+#academics li{
+    margin-bottom: 5px;
+}
+#academics a{
+    color: white;
+    text-decoration: none;
+}
+.content-container{
+    display:flex;
+    flex-wrap: wrap;
+
+}
+.content-container .section{
+  flex:1 1 300px;
+  border-right: 1px solid rgb(53, 53, 17);
+  
+}
+@media(min-width:768px){
+    .content-container{
+        flex-wrap: nowrap;
+    }
+}
+a img{
+    transition:transform 0.3s ease;
+}
+a img:hover{
+    transform:scale(1.1);
+}
+.image{
+    position: relative;
+    margin: 0;
+    height: 500;
+
+    
+}
+.image img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.imagetext{
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    transform: translate(-50%,50%);
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: left;
+    z-index: 1;
+
+}

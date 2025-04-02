@@ -1,0 +1,264 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+    
+}
+
+.image{
+    background-image: url('image1.jpg');
+    position:absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    
+}
+.space{
+    width:100%;
+    height: 280px;
+    
+}
+.image img{
+    display:block;
+    width: 100%;
+    height: 100%;
+     object-fit: cover;
+    
+}
+.overlay{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.8);
+    z-index: -1;
+}
+.imagetext{
+    position: relative;
+    top: 30;
+    left: 150;
+    /*transform: translate(-50%,50%);*/
+    color:hwb(180 92% 7%);
+    font-size: 50px;
+    font-weight: bold;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-style: italic;
+    
+
+}
+.div1{
+    background-color:#05051d ;
+    width:100%;
+    height: 120px;
+    text-align: left;
+    
+    
+}
+
+ .div1 {
+    color: #fff;
+    font-size:24px;
+}
+.head{
+    z-index: auto;
+
+    position: relative;
+    
+
+}
+.div a{
+    color: white;
+}
+
+
+
+.div2{
+    background-color:rgba(0,0,0,0.7);
+    width:100%;
+    height:80px;
+    text-align: right;
+    align-items: center;
+    display:grid;
+
+    
+}
+.nav a{
+    margin: 0 15px;
+    color: white;
+    font-size: 20px; 
+
+    
+    
+}
+
+h4{
+    font-size: 25px;
+    font-weight: oblique;
+}
+ .img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+    
+ }
+
+.badge{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3px;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3px;
+    padding: 50px;
+    padding-top: 100px;
+    margin:auto;
+    max-width: 1100px;
+    background-color:white;
+    
+}
+
+.gallery-item {
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+.gallery-title{
+    position:absolute;
+   left: 130px;
+   font-size: 28px;
+
+    z-index: 1o;
+    
+}
+.prev, .next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #f0f0f0;
+    border: none;
+    padding: 9px 18px;
+    cursor: pointer;
+    font-size: 15px;
+   
+    z-index: 10;
+}
+.prev{
+    left: 10px;
+}
+.next{
+    right: 10px;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox img {
+    max-width: 100%;
+    max-height: 90vh;
+    border-radius: 5px;
+}
+
+.lightbox .close {
+    position: absolute;
+    top: 25px;
+    right: 50px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+.copyright{
+    background-color: rgba(0,0,0,0.8);
+    height:20vh;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+}
+article{
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.section{
+    padding:20px;
+    margin-left:100 ;
+}
+.divider{
+    border-bottom: 1px solid red;
+    margin:20px 0;
+}
+h1{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+#academics ul{
+    list-style: none;
+    padding: 0;
+}
+#academics li{
+    margin-bottom: 5px;
+}
+#academics a{
+    color: white;
+    text-decoration: none;
+}
+.content-container{
+    display:flex;
+    flex-wrap: wrap;
+
+}
+.content-container .section{
+  flex:1 1 300px;
+  border-right: 1px solid rgb(53, 53, 17);
+  
+}
+@media(min-width:768px){
+    .content-container{
+        flex-wrap: nowrap;
+    }
+}
+a img{
+    transition:transform 0.3s ease;
+}
+a img:hover{
+    transform:scale(1.1);
+}
