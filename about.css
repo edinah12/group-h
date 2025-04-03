@@ -4,6 +4,10 @@
     text-align: center;
     
 }
+
+.header{
+    position: sticky;
+}
 .div1{
     background-color: #05051d;
     width:100%;
