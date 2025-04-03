@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=0.4">
     <title>School Homepage</title>
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="toggle.css">
 </head>
 
 <body>
@@ -24,7 +25,10 @@
 
         </nav>
     </header>
+    
     <div class="slideshow-container">
+        
+
         <img class="slide" src="admn.jpg" alt="Image 1">
         <img class="slide" src="staff.jpg" alt="Image 2">
         <img class="slide" src="prefects.jpg" alt="Image 3">
@@ -35,9 +39,11 @@
         <img class="slide" src="cows.jpg" alt="Image 8">
         <div class="text-box">Welcome to St. Mary's Boarding secondary school, Kitende, a place to nurture and groom your secondary school student's academic potential as well as sports and co-curricular skills all sandwiched in good morals.
         </div>
+        <button id="dark-mode-toggle">CHANGE COLOR MODE</button>
     </div>
+    
     </section>
-    <section class="content">
+    <section class="content card">
         <span style="font-size: 60;"><b>SMASK</b></span>
         <p><b><i>"Education is a priority"</i></b></p>
         <div class="about-container">
@@ -97,6 +103,8 @@
 
 
     <script src="slideshow.js"></script>
+    <script src="toggle.js"></script>
+    
 </body>
 
 </html>
