@@ -132,7 +132,7 @@ a img:hover{
 }
 .imagetext{
     position: absolute;
-    top: 60%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%,50%);
     color: white;
