@@ -10,10 +10,6 @@ a, p3{
     overflow-wrap: break-word;
     font-size: clamp(16px, 4vw, 24px);
 }
-
-.header{
-    position: sticky;
-}
 .div1{
     background-color: #004080;
     width:100%;
@@ -29,6 +25,7 @@ a, p3{
 }
 .head{
     z-index: auto;
+    position: sticky;
 
 
     
