@@ -15,7 +15,7 @@ a, p3{
     position: sticky;
 }
 .div1{
-    background-color: #05051d;
+    background-color: #004080;
     width:100%;
     height: 120px;
     text-align: left;
@@ -275,7 +275,7 @@ p1{
     color: white;
 }
 article{
-    background-color: black;
+    background-color: #004080;
     color: white;
     font-family: sans-serif;
     padding: 0;
