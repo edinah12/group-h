@@ -4,8 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const lightbox = document.querySelector(".lightbox");
     const lightboxImage = document.querySelector(".lightbox-image");
     const closeButton = document.querySelector(".close");
-    const prev = document.querySelector(".prev");
-    const next = document.querySelector(".next");
+
 
 //Open lightbox when an image is clicked
     galleryItems.forEach(item => {

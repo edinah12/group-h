@@ -100,7 +100,6 @@ image img{
     position: relative;
     top: 30;
     left: 150;
-    /*transform: translate(-50%,50%);*/
     color:hwb(180 92% 7%);
     font-size: 50px;
     font-weight: bold;
@@ -212,31 +211,7 @@ p1{
     font-size: 24px;
 }
 
-.last{
-    
-        background-color:rgba(0,0,0,0.8);
-        width:100%;
-        height:80px;
-        text-align: left;
-        align-items: center;
-        display:grid;
-        color: white;
-        
-}
 
-
-.div4{
-    font-size: 18;
-    color: white;
-    background-color: black;
-    
-    
-} 
-.div5{
-    display:contents;
-    gap: 20px;
-    
-}
 .modal {
     display: none; 
     position: fixed;
