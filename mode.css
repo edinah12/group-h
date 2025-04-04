@@ -12,7 +12,7 @@
 /* Dark Mode */
 .dark-mode {
     --bg-color: #121212;
-    --text-color: rgb(3, 7, 26);
+    --text-color: rgb(71, 83, 241);
     --btn-bg: #333;
     --btn-text: white;
     --btn-border: #292828;
@@ -23,7 +23,8 @@
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
-    transition: background-color 0.3s, color 0.3s ease-in-out;
+    transition: all 0.3s, color 0.3s ease-in-out;
+    
 
 }
 img{
@@ -31,12 +32,6 @@ img{
 }
 .dark-mode img{
     filter: var(--img-filter);
-}
-.card{
-    background-color: var(--card-big);
-    transition: all 0.3s ease-in-out;
-    
-    
 }
 
 /* Style the toggle button */
