@@ -12,7 +12,7 @@
 /* Dark Mode */
 .dark-mode {
     --bg-color: #121212;
-    --text-color: rgb(71, 83, 241);
+    --text-color: BLUE;
     --btn-bg: #333;
     --btn-text: white;
     --btn-border: #292828;
